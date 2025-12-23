@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Biodata — Glorie Octavia Gregory</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Elephant&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  /* Matching the Homepage Gradient */
+  --bg-gradient: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  --card-bg: rgba(255, 255, 255, 0.95); 
+  --text-main: #042024;
+  --muted: #6b7280;
+  --accent: #e26aa5;
+  --accent-dark: #000000;
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed; /* Gradient stays still */
+  min-height: 100vh;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* NAVIGATION BUTTONS */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+
+.nav-btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-btn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* BIODATA CARD */
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.profile-section {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img.profile {
+  width: 130px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-family: 'Elephant', serif;
+  color: var(--accent-dark);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* DETAILS TABLE */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th {
+  width: 140px;
+  text-align: left;
+  color: #555;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px 0;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 10px 16px;
+  background: #fde7ef;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.social-links a:hover {
+  background: #fbc2eb;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="page-nav">
+    <a class="nav-btn" href="Homepage.html">← Back</a>
+    <a class="nav-btn" href="My Portfolio.html">Next →</a>
+  </div>
+
+  <div class="card">
+    <div class="profile-section">
+      <img src="Profile Picture.jpg" class="profile" alt="Profile Picture">
+      <div class="profile-info">
+        <h1>My Biodata</h1>
+        <strong>Glorie Octavia Gregory</strong>
+        <p class="muted">Technology Multimedia Student</p>
+        <p>Freelance video editor studying at University Malaysia Sabah, Labuan.</p>
+      </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <h3>Details</h3>
+    <table>
+      <tr><th>Email</th><td>glorieoctavia1810@gmail.com</td></tr>
+      <tr><th>Age</th><td>22</td></tr>
+      <tr><th>Address</th><td>Penampang, Sabah</td></tr>
+    </table>
+
+    <h3 style="margin-top: 25px;">Social Media</h3>
+    <div class="social-links">
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

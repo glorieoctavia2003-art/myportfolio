@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>My Video — Glorie Octavia Gregory</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Elephant&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Site-wide theme */
+            --bg-gradient: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+            --card-bg: rgba(255, 255, 255, 0.95); 
+            --text-main: #042024;
+            --accent: #e26aa5;
+            --accent-dark: #000000;
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            min-height: 100vh;
+            text-align: center;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* Page Navigation */
+        .page-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px; 
+        }
+
+        .nav-btn {
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-family: 'Elephant', serif;
+            color: var(--accent-dark);
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* Video Container with Glass Effect */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 15px; 
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px); /* Enhances the glass effect */
+        }
+
+        .video-inner {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+            line-height: 0; /* Removes tiny gap at bottom of video */
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-bottom: 20px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="page-nav">
+        <a href="My Portfolio.html" class="nav-btn">← Back</a>
+        <a href="Your Comment.html" class="nav-btn">Next →</a>
+    </div>
+
+    <h1>My Video</h1>
+    <p class="muted">Showcasing my multimedia projects</p>
+
+    <div class="video-container">
+        <div class="video-inner">
+            <video controls poster="thumbnail-image.jpg">
+                <source src="My Project.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <footer>© 2025 Glorie Octavia Gregory</footer>
+
+</div>
+
+</body>
+</html>
